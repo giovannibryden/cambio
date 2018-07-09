@@ -25,6 +25,8 @@ a:hover {
   color: #fff;
 }
 
+
+
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -62,6 +64,11 @@ body {
 /*
  * Header
  */
+.logo {
+	padding: 3px;
+	background-color: #28a745;
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -133,6 +140,14 @@ body {
 	  background-size: cover;
 }
 
-.padding-landing {
-	height:250px;
+.padding-big {
+	height:240px;
+}
+
+.padding-medium {
+	height: 160px;
+}
+
+.padding-small {
+	height:80px;
 }
