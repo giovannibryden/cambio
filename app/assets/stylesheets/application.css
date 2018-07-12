@@ -148,16 +148,23 @@ body {
   margin: .25rem;
   padding: .75rem 1.25rem;
   font-weight: 700;
+  border-radius: 0.3em;
  }
 
 .alert {
   font-weight: 700;
+  margin:auto;
+  width: fit-content;
+  color: white;
+  border: none;
 }
 
 .alert-error {
+  background-color: #d03014;
 }
 
 .alert-success {
+  background-color: #14d03f;
 }
 
 .landing-page {
