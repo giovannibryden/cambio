@@ -5,3 +5,11 @@ development:
   pool: 5
   username: giovannibryden
   password: sk84life
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: cambio_development
+  pool: 5
+  username: giovannibryden
+  password: sk84life
