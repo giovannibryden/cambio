@@ -9,9 +9,11 @@ class EmailsController < ApplicationController
 		if @email.save
 			flash[:notice] = 'Success!'
 			puts ">>>>>>>>>>>>>> SAVED"
+			redirect_to root_path
 		else
-			flash[:notice] = 'Something went wrong.'
+			flash[:alert] = 'Something went wrong.'
 			puts ">>>>>>>>>>>>>> NOT SAVED"
+			redirect_to root_path
 		end
 	end
 end

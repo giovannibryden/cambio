@@ -31,6 +31,12 @@
         <div class="padding-small"></div>
 
         <p class="lead">
+        	<% flash.each do |key, value| %>
+        	        <div class="alert alert-<%= key %>"><%= value %></div>
+        	<% end %>
+        </p>
+
+        <p class="lead">
         	<%= form_for @email do |f| %>
         		<%= f.text_field :email, placeholder: "Enter your email address" %>
         		<p class="lead">
