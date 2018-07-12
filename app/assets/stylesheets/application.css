@@ -28,6 +28,7 @@ a:hover {
 
 
 /* Custom default button */
+input[type=submit],
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
@@ -135,6 +136,18 @@ body {
 /*
  * Gio
  */
+ input[type=submit] {
+  padding:0;
+  font-weight: 600;
+ }
+
+ input[type=text] {
+  text-align: center;
+  width: 300px;
+  margin: .25rem;
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+ }
 
 .landing-page {
 	background-image: url("https://i.imgur.com/UTzHPFm.jpg");
