@@ -3,8 +3,8 @@ development:
   encoding: unicode
   database: cambio_development
   pool: 5
-  username: giovannibryden
-  password: sk84life
+  username: <%= ENV['PG_DEV_USERNAME'] %>
+  password: <%= ENV['PG_DEV_PASSWORD'] %>
 
 production:
   adapter: postgresql
