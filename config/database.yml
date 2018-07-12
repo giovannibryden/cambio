@@ -6,11 +6,11 @@ development:
   username: giovannibryden
   password: sk84life
 
-development:
+production:
   adapter: postgresql
   encoding: unicode
-  host: ec2-107-22-169-45.compute-1.amazonaws.com
-  database: d5e4o41c6l0om8
-  username: fezjvmluhdyghn
+  host: <%= Rails.application.secrets[:database][:host] %>
+  database: <%= Rails.application.secrets[:database][:database] %>
+  username: <%= Rails.application.secrets[:database][:username] %>
   port: 5432
-  pa ssword: e2542168218d0d210e6dff6ee9fd413df4844b04614250b6d311d629631c960d
+  password: <%= Rails.application.secrets[:database][:password] %>
