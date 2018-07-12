@@ -17,14 +17,24 @@
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Fill out the right immigration forms quickly for free.</h1>
         <!-- <div class="padding-small"></div> -->
+        
+<!-- Copy for immigrants -->
+
         <p class="lead">Dealing with USCIS can be nerve-wracking, and hiring professional help is often prohibitively expensive. Cambio wants to change this by guiding you to the right forms, and helping you fill them out completely for free.</p>
+
+<!-- Copy for immigration lawyers -->
+		<!-- <p class="lead">...</p> -->
+
+<!-- Copy for non-profits -->
+		<!-- <p class="lead">...</p> -->
+
         <div class="padding-small"></div>
 
         <p class="lead">
         	<%= form_for(Email.new) do |f| %>
         		<%= f.text_field :email, placeholder: "Enter your email address" %>
         		<p class="lead">
-          			<a href="#" class="btn btn-lg btn-secondary"><%= f.submit "Sign up to learn more!"%></a>
+          			<a href="#" class="btn btn-lg btn-secondary"><%= f.submit "Sign up for updates!"%></a>
     			</p>
         	<% end %>
         </p>
