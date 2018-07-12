@@ -9,8 +9,8 @@ development:
 production:
   adapter: postgresql
   encoding: unicode
-  host: <%= Rails.application.secrets[:database][:host] %>
-  database: <%= Rails.application.secrets[:database][:database] %>
-  username: <%= Rails.application.secrets[:database][:username] %>
+  host: <%= ENV['PG_HOST'] %>
+  database: <%= ENV['PG_DATABASE'] %>
+  username: <%= ENV['PG_USERNAME'] %>
   port: 5432
-  password: <%= Rails.application.secrets[:database][:password] %>
+  password: <%= ENV['PG_PASSWORD'] %>
