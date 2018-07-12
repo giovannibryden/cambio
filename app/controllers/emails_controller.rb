@@ -7,11 +7,11 @@ class EmailsController < ApplicationController
 	def create
 		@email = Email.new(email_params)
 		if @email.save
-			flash[:notice] = 'Success!'
+			flash[:success] = 'Success!'
 			puts ">>>>>>>>>>>>>> SAVED"
 			redirect_to root_path
 		else
-			flash[:alert] = 'Something went wrong.'
+			flash[:error] = 'Something went wrong.'
 			puts ">>>>>>>>>>>>>> NOT SAVED"
 			redirect_to root_path
 		end

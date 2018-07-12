@@ -136,6 +136,7 @@ body {
 /*
  * Gio
  */
+
  input[type=submit] {
   padding:0;
   font-weight: 600;
@@ -148,6 +149,16 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
  }
+
+.alert {
+  font-weight: 700;
+}
+
+.alert-error {
+}
+
+.alert-success {
+}
 
 .landing-page {
 	background-image: url("https://i.imgur.com/UTzHPFm.jpg");

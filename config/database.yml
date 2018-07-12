@@ -9,7 +9,8 @@ development:
 development:
   adapter: postgresql
   encoding: unicode
-  database: cambio_development
-  pool: 5
-  username: giovannibryden
-  password: sk84life
+  host: ec2-107-22-169-45.compute-1.amazonaws.com
+  database: d5e4o41c6l0om8
+  username: fezjvmluhdyghn
+  port: 5432
+  pa ssword: e2542168218d0d210e6dff6ee9fd413df4844b04614250b6d311d629631c960d
