@@ -19,6 +19,16 @@
         <!-- <div class="padding-small"></div> -->
         <p class="lead">Dealing with USCIS can be nerve-wracking, and hiring professional help is often prohibitively expensive. Cambio wants to change this by guiding you to the right forms, and helping you fill them out completely for free.</p>
         <div class="padding-small"></div>
+
+        <p class="lead">
+        	<%= form_for(Email.new) do |f| %>
+        		<%= f.text_field :email %>
+        		<%= f.submit %>
+        	<% end %>
+        </p>
+
+        <%= @message %>
+
         <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Sign up to learn more.</a>
         </p>
