@@ -1,12 +1,17 @@
 class EmailsController < ApplicationController
 
+	def new 
+		@email = Email.new
+	end
+
 	def create
 		@email = Email.new(email_params)
 		if @email.save
 			flash[:notice] = 'Success!'
+			puts ">>>>>>>>>>>>>> SAVED"
 		else
 			flash[:notice] = 'Something went wrong.'
-			render 'root'
+			puts ">>>>>>>>>>>>>> NOT SAVED"
 		end
 	end
 end
