@@ -55,3 +55,15 @@
         </div>
       </footer>
     </div>
+
+    <!-- Tracking code -->
+    <script type="text/javascript">
+    	// Track basic page views
+    	mixpanel.track("Page View", {"Page":"Home"});
+    	
+    	// Track form submits
+    	$("#new_email").submit(function(){
+    		mixpanel.track("Subscribe",{"Email":$("#email_email").val()});
+    	});
+    </script>
+</body>
