@@ -188,3 +188,7 @@ body {
 .padding-small {
 	height:80px;
 }
+
+.padding-tiny {
+  height:20px;
+}
